@@ -1,6 +1,5 @@
-name: sqlcheck workflow2
-on: 
-  - push
+name: sqlcheck workflow1
+on: pull_request
 
 jobs:
   sqlcheck:
@@ -9,20 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: yokawasa/action-sqlcheck@v1.4.0
-      id: sqlcheck
       with:
         post-comment: true
         risk-level: 3
-        verbose: true
+        verbose: false
         token: ${{ secrets.GITHUB_TOKEN }}
-        postfixes: |
-          sql
-          sqlx
-          schema
-        directories: |
-          sql
-          build/sql_dir
-          tests/sql_dir
-    - name: Get output
-      run: echo "Issues found in previous step"
-      if: steps.sqlcheck.outputs.issue-found

@@ -1,5 +1,6 @@
 name: sqlcheck workflow2
-on: pull_request
+on: 
+  - push
 
 jobs:
   sqlcheck:

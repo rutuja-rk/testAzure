@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: RutujaK2211/testAzure@v2
+    - uses: RutujaK2211/testAzure@main
       id: sqlcheck
       with:
         post-comment: true

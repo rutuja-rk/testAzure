@@ -10,7 +10,6 @@ jobs:
       id: sqlcheck
       with:
         post-comment: true
-        run: echo "post-comment"
         risk-level: 3
         verbose: true
         token: ${{ secrets.GITHUB_TOKEN }}

@@ -28,4 +28,16 @@ inputs:
 outputs:
   issue-found:
     description: 'A boolean value to indicate an issue was found in the files that sqlcheck action checked'
-
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.post-comment }}
+    - ${{ inputs.token }}
+    - ${{ inputs.risk-level }}
+    - ${{ inputs.verbose }}
+    - ${{ inputs.postfixes }}
+    - ${{ inputs.directories }}
+branding:
+  icon: 'check-circle'
+  color: 'black'

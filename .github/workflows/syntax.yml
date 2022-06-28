@@ -18,4 +18,4 @@ jobs:
     - name: Get output
       
       if: steps.sqlcheck.outputs.issue-found
-      run: echo "Issues found in previous step"
+      #run: echo "Issues found in previous step"

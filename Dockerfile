@@ -4,7 +4,8 @@ LABEL com.github.actions.name="SQLCheck Action"
 LABEL com.github.actions.description="GitHub Action for sqlcheck CLI"
 LABEL com.github.actions.icon="code"
 LABEL com.github.actions.color="red"
-LABEL repository="https://github.com/RutujaK2211/testAzure"
+LABEL maintainer="Yoichi Kawasaki <yokawasa@gmail.com>"
+LABEL repository="https://github.com/yokawasa/action-sqlcheck"
 
 # latest sqlcheck: https://github.com/jarulraj/sqlcheck/releases
 RUN apt-get update && \

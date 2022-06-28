@@ -10,7 +10,7 @@ jobs:
       id: sqlcheck
       with:
         post-comment: true
-        risk-level: 3
+        risk-level: 2
         verbose: true
         token: ${{ secrets.GITHUB_TOKEN }}
         #directories: "./sqlfiles"

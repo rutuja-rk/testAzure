@@ -13,7 +13,7 @@ jobs:
         risk-level: 3
         verbose: true
         token: ${{ secrets.GITHUB_TOKEN }}
-        directories: "./sqlfiles"
+        directories: "./sql-script"
     - name: Get output
       run: echo "Issues found in previous step"
       if: steps.sqlcheck.outputs.issue-found

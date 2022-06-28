@@ -13,4 +13,4 @@ RUN apt-get update && \
   dpkg -i sqlcheck-x86_64.deb && \
   rm -rf /var/lib/apt/lists/*
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh","/RutujaK2211/testAzure/blob/main/entrypoint.sh"]

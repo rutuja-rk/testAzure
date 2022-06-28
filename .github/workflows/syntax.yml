@@ -2,7 +2,7 @@ name: sqlcheck
 on: pull_request
 jobs:
   sqlcheck:
-    name: sqlcheck job
+    name: sqlcheck jo
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

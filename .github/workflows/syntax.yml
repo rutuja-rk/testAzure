@@ -14,8 +14,8 @@ jobs:
         verbose: true
         token: ${{ secrets.GITHUB_TOKEN }}
         #directories: "./sqlfiles"
-        directories: "./sql-script"
+        #directories: "./sql-script"
     - name: Get output
-      
-      if: steps.sqlcheck.outputs.issue-found
       run: echo "Issues found in previous step"
+      if: steps.sqlcheck.outputs.issue-found
+      

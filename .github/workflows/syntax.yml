@@ -13,8 +13,11 @@ jobs:
         risk-level: 3
         verbose: true
         token: ${{ secrets.GITHUB_TOKEN }}
-        directories: "./sqlfiles"
-        #directories: "./sql-script"
+        #directories: "./sqlfiles"
+        directories: |
+          sql
+          build/sql_dir
+          tests/sql_dir
     - name: Get output
       
       if: steps.sqlcheck.outputs.issue-found

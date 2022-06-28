@@ -1,5 +1,6 @@
 name: "SQLCheck Action"
 description: "Automatically identify anti-patterns in SQL queries using SQLCheck"
+author: "yokawasa"
 inputs:
   post-comment:
     description: "Post comment to PR"

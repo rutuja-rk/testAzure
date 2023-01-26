@@ -10,12 +10,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-        with:
+        #with:
           # [Required] Access token with `workflow` scope.
-          token: ${{ secrets.WORKFLOW_SECRET }}
+          #token: ${{ secrets.WORKFLOW_SECRET }}
 
       - name: Run GitHub Actions Version Updater
         uses: saadmk11/github-actions-version-updater@v0.7.3
         with:
           # [Required] Access token with `workflow` scope.
-          token: ${{ secrets.WORKFLOW_SECRET }}
+          #token: ${{ secrets.WORKFLOW_SECRET }}
+          skip_pull_request: 'true'

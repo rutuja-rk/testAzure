@@ -24,7 +24,6 @@ jobs:
           committer_email: 'test@test.com'
           commit_message: 'Commit Message'
           pull_request_title: 'Hello'
-          ignore: 'actions/checkout@v2, actions/cache@v2'
           skip_pull_request: 'true'
           update_version_with: 'release-tag'
           release_types: "minor, patch"

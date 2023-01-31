@@ -19,4 +19,4 @@ jobs:
         with:
           # [Required] Access token with `workflow` scope.
           token: ${{ secrets.WORKFLOW_SECRET }}
-          slack_webhook_url: '/webhook_url'
+          slack_webhook_url: ${{ secrets.WEBHOOK }}

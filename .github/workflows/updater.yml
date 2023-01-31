@@ -19,4 +19,16 @@ jobs:
         with:
           # [Required] Access token with `workflow` scope.
           token: ${{ secrets.WORKFLOW_SECRET }}
-          slack_webhook_url: ${{ secrets.WEBHOOK }}
+          #slack_webhook_url: ${{ secrets.WEBHOOK }}
+          committer_username: 'Test'
+          committer_email: 'test@test.com'
+          commit_message: 'Commit Message'
+          pull_request_title: 'Hello'
+          ignore: 'actions/checkout@v2, actions/cache@v2'
+          skip_pull_request: 'true'
+          update_version_with: 'release-tag'
+          release_types: "minor, patch"
+          pull_request_labels: "dependencies, automated"
+          extra_workflow_locations: "path/to/directory, path/to/workflow.yaml"
+          # [Experimental]
+          pull_request_branch: "actions-update-hello"

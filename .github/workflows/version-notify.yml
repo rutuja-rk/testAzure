@@ -13,7 +13,7 @@ jobs:
         with:
           # [Required] Access token with `workflow` scope.
           #token: ${{ secrets.WORKFLOW_SECRET }}
-          token: ${{ secrets.VERSION_2 }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
    
@@ -21,6 +21,6 @@ jobs:
         uses: RutujaK2211/Github-version-notify@main
         with:
           # [Required] Access token with `workflow` scope.
-          token: ${{ secrets.VERSION_2 }}
-         # slack_webhook_url: ${{ secrets.WEBHOOK }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+  
           

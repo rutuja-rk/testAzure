@@ -1,9 +1,7 @@
 name: Workflow1
 
 on:
-  push:
-    branches:
-      - trigger-workflow
+  workflow_dispatch:
 
 jobs:
   build:

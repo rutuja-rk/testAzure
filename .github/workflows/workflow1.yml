@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      pat_token: ${{ secrets.GITHUB_TOKEN }}
+      pat_token: ${{ secrets.PAT }}
 
 
     steps:

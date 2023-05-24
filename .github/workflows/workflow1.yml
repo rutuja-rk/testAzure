@@ -20,5 +20,5 @@ jobs:
           -X POST \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: pat_token" \
-          https://api.github.com/repos/RutujaK2211/testAzure/trigger-workflow/actions/workflows/workflow2.yml/dispatches \
+          https://api.github.com/repos/RutujaK2211/testAzure/actions/workflows/workflow2.yml/dispatches \
           -d '{"ref":"refs/heads/master"}'

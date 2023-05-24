@@ -1,0 +1,25 @@
+name: Workflow2
+
+on:
+ workflow_dispatch:
+
+    
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: run a one-line script
+        run: echo BTS!
+        
+      - name: run multiline script
+        run: |
+          echo Kim Namjoon 
+          echo Kim Seokjin
+          echo Min Yoongi
+          echo Jung Hoseok 
+          echo Park Jimin
+          echo Kim Taehyung
+          echo Jeon Jungkook
+               

@@ -1,0 +1,14 @@
+name: Workflow2
+
+on:
+ repository_dispatch:
+    types: [trigger-repo-2]
+
+    
+jobs:
+  Redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Deploy App Engine Service
+        run: echo "${{ github.event.client_payload.service_name}}"

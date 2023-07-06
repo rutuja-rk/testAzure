@@ -13,5 +13,4 @@ jobs:
       - name: Deploy App Engine Service
         run: |
           echo "${{ github.event.client_payload.service_name}}"
-          exit 1
         

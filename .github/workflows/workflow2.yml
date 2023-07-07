@@ -2,7 +2,7 @@ name: Workflow2
 
 on:
  repository_dispatch:
-    types: [trigger-repo-1]
+    types: [trigger-repo-11]
 
     
 jobs:
@@ -13,5 +13,4 @@ jobs:
       - name: Deploy App Engine Service
         run: |
           echo "${{ github.event.client_payload.service_name}}"
-          exit 1
         
